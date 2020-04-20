@@ -528,6 +528,9 @@ public class IOtask2RunTrial {
 		circleGroup[IOtask2BlockContext.getnCircles() - 1].addNodeMouseDoubleClickHandler(new NodeMouseDoubleClickHandler() {
 			public void onNodeMouseDoubleClick(NodeMouseDoubleClickEvent event) {
 				if (IOtask2BlockContext.getDoubleClickFlag()) {
+					//pretend that there were 10 hits
+					IOtask2BlockContext.setnHits(10);
+					
 					RootPanel.get().remove(verticalPanel);
 					IOtask2BlockContext.incrementCurrentTrial();
 					SequenceHandler.Next();
