@@ -29,6 +29,9 @@ public class IOtask2Block {
 
 	// total number of circles in one trial
 	public int totalCircles = 25;
+	
+	// update the progress bar with progress through the block? 
+	public boolean updateProgress = false;
 
 	// allow any circle to be moved? NB this will be overridden by participants'
 	// choice to use reminders or not, if this choice is presented
